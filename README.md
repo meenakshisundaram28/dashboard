@@ -1,3 +1,7 @@
+## note 
+
+please make your system installed angular 19 and related node version in application
+
 # Dashboard
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.0.
