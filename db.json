@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": "4722",
+      "name": "meenakshi",
+      "email": "guest@gmail.com",
+      "notification": true
+    },
+    {
+      "id": "cd61",
+      "name": "meenakshi",
+      "email": "guest@gmail.com",
+      "notification": true
+    },
+    {
+      "id": "2f09",
+      "name": "nnn",
+      "email": "user@gmail.com",
+      "notification": true
+    },
+    {
+      "id": "9250",
+      "name": "root",
+      "email": "guest@gmail.com",
+      "notification": true
+    }
+  ]
+}
