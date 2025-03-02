@@ -8,7 +8,6 @@ export class AuthInterceptorService implements HttpInterceptor {
 
   constructor(private api: ApiserviceService) {}
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-    debugger
     const token = this.api.getToken();
     const role = this.api.getUser();
     console.log(token,role)

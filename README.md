@@ -11,18 +11,20 @@ ng serve
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## api calls
 
-
-ng generate component component-name
+i used json server for api calls to start the json server json-server --watch db.json --port 3000 you need to use the command to another terminal
 
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## authentication
 
+  this application role authentication implemented here ,only three role allowed used certain email that are admin@gmail.com,user@gmail.com,guest@gmail.com. if any other email used permission denied error showed 
 
-ng generate --help
+# time stamp
+
+user login time will be showed in dashboard header
+
 
 ## Building
 
@@ -41,17 +43,3 @@ To execute unit tests with the [Karma](https://karma-runner.github.io) test runn
 
 ng test
 
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-
-ng e2e
-
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

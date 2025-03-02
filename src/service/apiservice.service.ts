@@ -8,6 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class ApiserviceService {
  private apiUrl = 'http://localhost:3000/users'; 
+ private id : any;
   constructor(private http: HttpClient) { }
 
    login(value:any): Observable<any> {
@@ -16,6 +17,14 @@ export class ApiserviceService {
 
   getData(): Observable<any> {
     return this.http.get(`${this.apiUrl}`); 
+  }
+
+  setValue(value: any) {
+    this.id = value;
+  }
+
+  getValue(): any {
+    return this.id;
   }
 
   
@@ -38,6 +47,7 @@ export class ApiserviceService {
 
   logout(): void {
     localStorage.removeItem('authToken');
+    localStorage.removeItem('userRole');
   }
 
   isAuthenticated(): boolean {

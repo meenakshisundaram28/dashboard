@@ -23,6 +23,7 @@ const routes: Routes = [
     canActivate: [RoleGuard], 
     data: { roles: ['guest'] } 
   },
+  {path:'logout',component:LoginComponent},
   { path: '**', redirectTo: '' }
 ];
 

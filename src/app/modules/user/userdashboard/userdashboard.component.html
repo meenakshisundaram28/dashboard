@@ -1,1 +1,18 @@
-<p>userdashboard works!</p>
+<div class="sidenav">
+    <p>guest</p>
+    <a href="#about">user details</a>
+    <a href="#services">Services</a>
+    <a href="#clients">Clients</a>
+    <a href="#contact">Contact</a>
+  </div>
+<div class="head-guest">
+   <label>login time :</label> &nbsp;<span>{{lastTimestamp}}</span> &nbsp;
+   <label>usertype:</label> &nbsp;<span>{{userRole}}</span>
+
+   <button mat-button (click)="toggleTheme()">
+    <mat-icon>{{ isDarkMode ? 'light_mode' : 'dark_mode' }}</mat-icon>
+  </button>
+   <button mat-button (click)="logout()">
+    <mat-icon>logout</mat-icon> Logout
+  </button>
+</div>
